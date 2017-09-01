@@ -1,0 +1,30 @@
+{
+  "name": "huaxi",
+  "version": "1.0.0",
+  "description": "华西",
+  "main": "main2.js",
+  "scripts": {
+    "start": "electron .",
+    "exe32": "electron-packager . poopie --platform linux --arch ia32 --out dist/ --ignore \"(dist|node_modules/electron.*)\"",
+    "exe64": "electron-packager . poopie --platform linux --arch x64 --out dist/ --ignore \"(dist|node_modules/electron.*)\"",
+    "deb32": "electron-installer-debian --src dist/poopie-linux-ia32/ --arch i386 --config config.json",
+    "deb64": "electron-installer-debian --src dist/poopie-linux-x64/ --arch amd64 --config config.json",
+    "build": "npm run clean && npm run exe32 && npm run deb32 && npm run exe64 && npm run deb64"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-installer-debian": "^0.5.2",
+    "electron-packager": "^9.0.0",
+    "electron-rebuild": "^1.6.0"
+  }
+}

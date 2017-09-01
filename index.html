@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"><meta http-equiv=Content-Type content="text/html; charset=utf-8"><script>var rpio = require('rpio');
+    rpio.open(40, rpio.OUTPUT, rpio.HIGH);
+    rpio.open(38, rpio.OUTPUT, rpio.HIGH);
+    rpio.open(15, rpio.INPUT, rpio.PULL_UP);
+    var wifi = require('node-wifi');
+    var webFrame = require('electron').webFrame;
+    webFrame.setVisualZoomLevelLimits(1, 1);
+    webFrame.setLayoutZoomLevelLimits(1, 1);</script><style>* {
+      cursor: none !important;
+    }</style><link href=./assets/css/app.3d9d3442f034ec132d0a49b8f00bcafc.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./assets/js/manifest.a9bf1aa19f02344fc0a8.js></script><script type=text/javascript src=./assets/js/vendor.f399fa9a28ccb2210109.js></script><script type=text/javascript src=./assets/js/app.a02dbe8436c5adc34ff5.js></script></body></html>
