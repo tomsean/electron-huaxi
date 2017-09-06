@@ -25,6 +25,9 @@
     "electron": "~1.6.2",
     "electron-installer-debian": "^0.5.2",
     "electron-packager": "^9.0.0",
-    "electron-rebuild": "^1.6.0"
-  }
+    "electron-rebuild": "^1.6.0",
+    "rpio": "^0.9.17",
+    "node-wifi": "^1.2.5"
+  },
+  "dependencies": {}
 }
